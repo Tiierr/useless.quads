@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b439301d.chunk.css",
-    "main.js": "/static/js/main.f76f8f1a.chunk.js",
-    "main.js.map": "/static/js/main.f76f8f1a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d47f61b1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d47f61b1.js.map",
-    "static/js/2.8539c99c.chunk.js": "/static/js/2.8539c99c.chunk.js",
-    "static/js/2.8539c99c.chunk.js.map": "/static/js/2.8539c99c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e89510165a702733e7abcb29e772895e.js": "/precache-manifest.e89510165a702733e7abcb29e772895e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.b439301d.chunk.css.map": "/static/css/main.b439301d.chunk.css.map",
-    "static/js/2.8539c99c.chunk.js.LICENSE.txt": "/static/js/2.8539c99c.chunk.js.LICENSE.txt",
-    "static/media/p1.jpg": "/static/media/p1.ddc13a2d.jpg",
-    "static/media/p3.png": "/static/media/p3.5dc7d115.png"
+    "main.css": "/useless.quads/static/css/main.b439301d.chunk.css",
+    "main.js": "/useless.quads/static/js/main.b01eaec4.chunk.js",
+    "main.js.map": "/useless.quads/static/js/main.b01eaec4.chunk.js.map",
+    "runtime-main.js": "/useless.quads/static/js/runtime-main.4f900c10.js",
+    "runtime-main.js.map": "/useless.quads/static/js/runtime-main.4f900c10.js.map",
+    "static/js/2.8539c99c.chunk.js": "/useless.quads/static/js/2.8539c99c.chunk.js",
+    "static/js/2.8539c99c.chunk.js.map": "/useless.quads/static/js/2.8539c99c.chunk.js.map",
+    "index.html": "/useless.quads/index.html",
+    "precache-manifest.4dcf05bdb8d6bdf497381af7a3772c08.js": "/useless.quads/precache-manifest.4dcf05bdb8d6bdf497381af7a3772c08.js",
+    "service-worker.js": "/useless.quads/service-worker.js",
+    "static/css/main.b439301d.chunk.css.map": "/useless.quads/static/css/main.b439301d.chunk.css.map",
+    "static/js/2.8539c99c.chunk.js.LICENSE.txt": "/useless.quads/static/js/2.8539c99c.chunk.js.LICENSE.txt",
+    "static/media/p1.jpg": "/useless.quads/static/media/p1.ddc13a2d.jpg",
+    "static/media/p3.png": "/useless.quads/static/media/p3.5dc7d115.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d47f61b1.js",
+    "static/js/runtime-main.4f900c10.js",
     "static/js/2.8539c99c.chunk.js",
     "static/css/main.b439301d.chunk.css",
-    "static/js/main.f76f8f1a.chunk.js"
+    "static/js/main.b01eaec4.chunk.js"
   ]
 }
