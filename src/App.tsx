@@ -13,8 +13,8 @@ function App() {
   const dotRef = useRef(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  const width = 1024;
-  const height = 1024;
+  const width = 512;
+  const height = 512;
 
   // todo: support upload picture
   // const [quadImage] = useState<string>(getRandom(images));
@@ -35,7 +35,7 @@ function App() {
           .style("display", "block");
 
       const quad = new Quad(0, 0, width, width, null, context);
-      if (quad.e > 30) {
+      if (quad.e > 45) {
         document.body.style.backgroundColor = "#FFFFFB";
       }
 
@@ -47,6 +47,7 @@ function App() {
   return (
     <div className="center">
       <div className="cont">
+        // todo: fix display on iPad Browser
         <div className="dot" ref={dotRef}>
           <canvas height={height} width={width} ref={canvasRef} style={{display: "none"}}/>
         </div>

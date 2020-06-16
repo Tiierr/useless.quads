@@ -44,7 +44,7 @@ function computeHistogram(imageContext: CanvasRenderingContext2D, x: number, y: 
 }
 
 function checkSplit(args: Array<number>): boolean {
-    return args.filter(x => x >= 1).length === args.length;
+    return args.filter(x => x >= 16).length === args.length;
 }
 
 
