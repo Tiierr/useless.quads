@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/useless.quads/static/css/main.b439301d.chunk.css",
-    "main.js": "/useless.quads/static/js/main.d5620aff.chunk.js",
-    "main.js.map": "/useless.quads/static/js/main.d5620aff.chunk.js.map",
+    "main.js": "/useless.quads/static/js/main.e53d2965.chunk.js",
+    "main.js.map": "/useless.quads/static/js/main.e53d2965.chunk.js.map",
     "runtime-main.js": "/useless.quads/static/js/runtime-main.4f900c10.js",
     "runtime-main.js.map": "/useless.quads/static/js/runtime-main.4f900c10.js.map",
     "static/js/2.b749851b.chunk.js": "/useless.quads/static/js/2.b749851b.chunk.js",
     "static/js/2.b749851b.chunk.js.map": "/useless.quads/static/js/2.b749851b.chunk.js.map",
     "index.html": "/useless.quads/index.html",
-    "precache-manifest.41c5bf0a8d5ac6a33578a449d51c756f.js": "/useless.quads/precache-manifest.41c5bf0a8d5ac6a33578a449d51c756f.js",
+    "precache-manifest.5466fd8cb6514f2295ae10bfa68c39f6.js": "/useless.quads/precache-manifest.5466fd8cb6514f2295ae10bfa68c39f6.js",
     "service-worker.js": "/useless.quads/service-worker.js",
     "static/css/main.b439301d.chunk.css.map": "/useless.quads/static/css/main.b439301d.chunk.css.map",
     "static/js/2.b749851b.chunk.js.LICENSE.txt": "/useless.quads/static/js/2.b749851b.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.4f900c10.js",
     "static/js/2.b749851b.chunk.js",
     "static/css/main.b439301d.chunk.css",
-    "static/js/main.d5620aff.chunk.js"
+    "static/js/main.e53d2965.chunk.js"
   ]
 }
