@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="center">
       <div className="cont">
-        // todo: fix display on iPad Browser
+        {/*todo: fix display on iPad Browser*/}
         <div className="dot" ref={dotRef}>
           <canvas height={height} width={width} ref={canvasRef} style={{display: "none"}}/>
         </div>
