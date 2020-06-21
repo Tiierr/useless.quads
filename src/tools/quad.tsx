@@ -1,4 +1,11 @@
-import {checkSplit, computeHistogram, colorFromHistogram} from './calculate'
+import {checkSplit, computeHistogram, colorFromHistogram} from './calculate';
+
+const sum = function (items: Array<Quad | null>, prop: string){
+    return items.reduce( function(a, b){
+        // @ts-ignore
+        return prop === 'e' ?  a + b[prop] :  a + b[prop]()
+    }, 0);
+};
 
 class Quad {
     x: number;
@@ -32,8 +39,23 @@ class Quad {
         this.node = null;
         this.parent = p;
     }
-
-    split() {
+    averageError(): number{
+        const quads = this.split();
+        if (quads == null) {
+            return 0;
+        } else {
+            return sum(quads, 'e') / 4;
+        }
+    }
+    averageChildError(): number{
+        const quads = this.split();
+        if (quads == null) {
+            return 0;
+        } else {
+            return sum(quads, 'averageError') / 4;
+        }
+    }
+    split(): Array<Quad> | null {
         const dx = this.w / 2, x1 = this.x, x2 = this.x + dx;
         const dy = this.h / 2, y1 = this.y, y2 = this.y + dy;
 

@@ -1,10 +1,10 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import * as d3 from 'd3';
 
 import Quad from './tools/quad';
 import Circle from './tools/circle';
 import {findImage, getRandom} from "./tools/common";
-
+import Upload from "./component/upload";
 
 function App() {
 
@@ -16,10 +16,7 @@ function App() {
   const width = 512;
   const height = 512;
 
-  // todo: support upload picture
-  // const [quadImage] = useState<string>(getRandom(images));
-
-  const quadImage = getRandom(images);
+  const [quadImage, setQuadImage] = useState<string>(getRandom(images));
   useEffect(() => {
     if (!canvasRef.current) return;
 
@@ -33,26 +30,23 @@ function App() {
           .append("svg")
           .attr("viewBox", `0 0 ${height} ${width}`)
           .style("display", "block");
-
       const quad = new Quad(0, 0, width, width, null, context);
-      if (quad.e > 45) {
+      if (quad.averageChildError() >= 15) {
         document.body.style.backgroundColor = "#FFFFFB";
       }
-
       Circle(svg, [quad], true);
     };
     img.src = quadImage;
   }, [quadImage]);
 
   return (
-    <div className="center">
-      <div className="cont">
-        {/*todo: fix display on iPad Browser*/}
-        <div className="dot" ref={dotRef}>
-          <canvas height={height} width={width} ref={canvasRef} style={{display: "none"}}/>
-        </div>
+      <div className="center">
+        <Upload setImage={setQuadImage}/>
+          {/*todo: fix display on iPad Browser*/}
+        {quadImage &&<div className="dot" ref={dotRef}>
+            <canvas height={height} width={width} ref={canvasRef} style={{display: "none"}}/>
+          </div>}
       </div>
-    </div>
   );
 }
 

@@ -1,0 +1,10 @@
+.upload {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    .upload-input-label {
+      .base-upload-input {
+        display: none;
+      }
+    }
+}
