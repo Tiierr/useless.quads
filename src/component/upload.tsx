@@ -6,10 +6,11 @@ import uploadIcon from '../static/svg/upload.svg';
 const MAX_FILE_SIZE = 10 * 1024 * 1024 // 文件最大限制为10M
 
 interface uploadProps {
-    setImage: (src: string) => void
+    setImage: (src: string) => void,
+    setError: (value: boolean) => void
 }
 
-export default function Upload({setImage}: uploadProps) {
+export default function Upload({setImage, setError}: uploadProps) {
     const [modalVisible, setVisible] = useState(false);
     const [uploadImage, setUploadImage] = useState<File | null>(null);
 
@@ -33,8 +34,7 @@ export default function Upload({setImage}: uploadProps) {
             if (image.size <= MAX_FILE_SIZE) {
                 setUploadImage(files[0])
             } else {
-                // todo: Warning alert
-                alert('文件过大！')
+                setError(true);
             }
         }
     }

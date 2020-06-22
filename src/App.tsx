@@ -5,8 +5,10 @@ import Quad from './tools/quad';
 import Circle from './tools/circle';
 import {findImage, getRandom} from "./tools/common";
 import Upload from "./component/upload";
+import Error from "./component/error";
 
 function App() {
+  const [errorVisible, setError] = useState(false);
 
   const images: Array<string> = findImage();
 
@@ -40,13 +42,21 @@ function App() {
   }, [quadImage]);
 
   return (
-      <div className="center">
-        <Upload setImage={setQuadImage}/>
+      <>
+        {!errorVisible && <div className="center">
+          <Upload setImage={setQuadImage} setError={setError}/>
           {/*todo: fix display on iPad Browser*/}
-        {quadImage &&<div className="dot" ref={dotRef}>
+          {quadImage && <div className="dot" ref={dotRef}>
             <canvas height={height} width={width} ref={canvasRef} style={{display: "none"}}/>
           </div>}
-      </div>
+        </div>}
+        {errorVisible && <Error title="呐呐!?" detail="图片太大了哟！"
+                                onClose={() => {
+                                  setQuadImage(getRandom(images));
+                                  setError(false);
+                                }}/>
+        }
+      </>
   );
 }
 
