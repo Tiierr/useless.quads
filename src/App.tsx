@@ -60,7 +60,7 @@ function App() {
             <canvas height={height} width={width} ref={canvasRef} style={{display: "none"}}/>
           </div>}
         </div>}
-        {errorVisible && <Error title="呐呐!?" detail="图片太大了哟！"
+        {errorVisible && <Error title="Oops..." detail="Seems image too large"
                                 onClose={() => {
                                   setQuadImage(getRandom(images));
                                   setError(false);
