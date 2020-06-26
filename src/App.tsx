@@ -6,10 +6,10 @@ import Circle from './tools/circle';
 import {findImage, getRandom} from "./tools/common";
 import Upload from "./component/upload";
 import Error from "./component/error";
+import Bulb from "./component/bulb";
 
 function App() {
   const [errorVisible, setError] = useState(false);
-
   const images: Array<string> = findImage();
 
   const dotRef = useRef(null);
@@ -18,7 +18,18 @@ function App() {
   const width = 512;
   const height = 512;
 
+  const light = "#fffffb", dark = "#222";
+
   const [quadImage, setQuadImage] = useState<string>(getRandom(images));
+  const [backgroundColor, setBGColor] = useState(light);
+  const [bulb, setBulb] = useState(false);
+
+
+  useEffect(() => {
+    setBGColor(bulb ? dark : light)
+    document.body.style.backgroundColor = backgroundColor;
+  }, [backgroundColor, bulb])
+
   useEffect(() => {
     if (!canvasRef.current) return;
 
@@ -33,9 +44,6 @@ function App() {
           .attr("viewBox", `0 0 ${height} ${width}`)
           .style("display", "block");
       const quad = new Quad(0, 0, width, width, null, context);
-      if (quad.averageChildError() >= 15) {
-        document.body.style.backgroundColor = "#FFFFFB";
-      }
       Circle(svg, [quad], true);
     };
     img.src = quadImage;
@@ -43,8 +51,10 @@ function App() {
 
   return (
       <>
-        {!errorVisible && <div className="center">
+        {!errorVisible &&
+        <div className="center">
           <Upload setImage={setQuadImage} setError={setError}/>
+          <Bulb onSwitch={() => setBulb(!bulb)}/>
           {/*todo: fix display on iPad Browser*/}
           {quadImage && <div className="dot" ref={dotRef}>
             <canvas height={height} width={width} ref={canvasRef} style={{display: "none"}}/>

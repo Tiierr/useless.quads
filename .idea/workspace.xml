@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3065a15a-4dd7-4994-a805-7ce55516df2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/error.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/bulb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/bulb.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/upload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/upload.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,8 @@
       <workItem from="1592214934738" duration="12124000" />
       <workItem from="1592449599456" duration="890000" />
       <workItem from="1592716573802" duration="23211000" />
-      <workItem from="1592824191713" duration="2150000" />
+      <workItem from="1592824191713" duration="2484000" />
+      <workItem from="1593155191438" duration="7085000" />
     </task>
     <servers />
   </component>
@@ -101,10 +102,18 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2115" y="403" key="#SCSS_Lint/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592735479341" />
-    <state x="1539" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1592722261354">
+    <state x="1864" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593161930036">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="1539" y="100" width="1720" height="880" key="DiffContextDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592722261354" />
+    <state x="1864" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593161930036" />
+    <state x="2158" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593156028155">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2158" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593156028155" />
+    <state x="1539" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1593160204782">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1539" y="100" width="1720" height="880" key="DiffContextDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593160204782" />
     <state x="2065" y="325" key="EditFileWatcherDialog" timestamp="1592735475326">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
@@ -117,6 +126,10 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="1602" y="543" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592722261355" />
+    <state x="2107" y="295" width="586" height="490" key="find.popup" timestamp="1593158453537">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2107" y="295" width="586" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593158453537" />
     <state x="2130" y="389" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1592395810274">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
