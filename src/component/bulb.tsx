@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import './bulb.scss';
+import {useLocalStorage} from "@rehooks/local-storage";
 
 interface BulbProps {
     onSwitch: () => void
@@ -25,11 +26,11 @@ export default function Bulb({onSwitch}: BulbProps) {
             },
         }
     }
-    const [cableStyle, setCableStyle] = useState({});
-    const [coverStyle, setCoverStyle] = useState({});
-    const [bulbStyle, setBulbStyle] = useState({});
-    const [bulbLightStyle, setLightStyle] = useState({});
-    const [bulbSwitch, setSwitch] = useState(false);
+    const [cableStyle, setCableStyle] = useLocalStorage("cableStyle", {});
+    const [coverStyle, setCoverStyle] = useLocalStorage("coverStyle", {});
+    const [bulbStyle, setBulbStyle] = useLocalStorage("bulbStyle", {});
+    const [bulbLightStyle, setLightStyle] = useLocalStorage("bulbLightStyle", {});
+    const [bulbSwitch, setSwitch] = useLocalStorage<boolean>("bulbSwitch", false);
 
     useEffect(() => {
         const lightStyle = light();
@@ -44,7 +45,7 @@ export default function Bulb({onSwitch}: BulbProps) {
             setCoverStyle(lightStyle.bulbCover)
             setCableStyle(lightStyle.cable)
         }
-    }, [bulbSwitch])
+    }, [bulbSwitch,  setCableStyle, setLightStyle, setCoverStyle, setBulbStyle])
 
     return (
         <div className="bulb-container">

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3065a15a-4dd7-4994-a805-7ce55516df2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/static/svg/download.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/error.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/bulb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/bulb.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/upload.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/upload.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/calculate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/calculate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +66,14 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/static/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/static/svg" />
       <recent name="$PROJECT_DIR$/src/static/file" />
       <recent name="$PROJECT_DIR$/src/static" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/static/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/static/img" />
     </key>
   </component>
@@ -120,14 +126,14 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="1909" y="179" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592450887027" />
-    <state x="1602" y="543" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1592722261355">
+    <state x="1602" y="200" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593170268786">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="1602" y="543" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592722261355" />
-    <state x="2107" y="295" width="586" height="490" key="find.popup" timestamp="1593158453537">
+    <state x="1602" y="200" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593170268786" />
+    <state x="2107" y="295" width="586" height="490" key="find.popup" timestamp="1593174650923">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="2107" y="295" width="586" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593158453537" />
+    <state x="2107" y="295" width="586" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593174650923" />
     <state x="2130" y="389" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1592395810274">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
