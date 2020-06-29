@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/useless.quads/static/css/main.88766022.chunk.css",
-    "main.js": "/useless.quads/static/js/main.33882f63.chunk.js",
-    "main.js.map": "/useless.quads/static/js/main.33882f63.chunk.js.map",
+    "main.css": "/useless.quads/static/css/main.76df9928.chunk.css",
+    "main.js": "/useless.quads/static/js/main.48de54d3.chunk.js",
+    "main.js.map": "/useless.quads/static/js/main.48de54d3.chunk.js.map",
     "runtime-main.js": "/useless.quads/static/js/runtime-main.4f900c10.js",
     "runtime-main.js.map": "/useless.quads/static/js/runtime-main.4f900c10.js.map",
     "static/css/2.34dcc6c8.chunk.css": "/useless.quads/static/css/2.34dcc6c8.chunk.css",
-    "static/js/2.ca91d9c4.chunk.js": "/useless.quads/static/js/2.ca91d9c4.chunk.js",
-    "static/js/2.ca91d9c4.chunk.js.map": "/useless.quads/static/js/2.ca91d9c4.chunk.js.map",
+    "static/js/2.f022fb05.chunk.js": "/useless.quads/static/js/2.f022fb05.chunk.js",
+    "static/js/2.f022fb05.chunk.js.map": "/useless.quads/static/js/2.f022fb05.chunk.js.map",
     "index.html": "/useless.quads/index.html",
-    "precache-manifest.1d36d29576674cdfd8989b5e6bfd904a.js": "/useless.quads/precache-manifest.1d36d29576674cdfd8989b5e6bfd904a.js",
+    "precache-manifest.81a8c453c6a1ed51d0228c29c2cdc07d.js": "/useless.quads/precache-manifest.81a8c453c6a1ed51d0228c29c2cdc07d.js",
     "service-worker.js": "/useless.quads/service-worker.js",
     "static/css/2.34dcc6c8.chunk.css.map": "/useless.quads/static/css/2.34dcc6c8.chunk.css.map",
-    "static/css/main.88766022.chunk.css.map": "/useless.quads/static/css/main.88766022.chunk.css.map",
-    "static/js/2.ca91d9c4.chunk.js.LICENSE.txt": "/useless.quads/static/js/2.ca91d9c4.chunk.js.LICENSE.txt",
+    "static/css/main.76df9928.chunk.css.map": "/useless.quads/static/css/main.76df9928.chunk.css.map",
+    "static/js/2.f022fb05.chunk.js.LICENSE.txt": "/useless.quads/static/js/2.f022fb05.chunk.js.LICENSE.txt",
     "static/media/done.svg": "/useless.quads/static/media/done.4190ac11.svg",
     "static/media/download.svg": "/useless.quads/static/media/download.2195120e.svg",
     "static/media/p1.jpg": "/useless.quads/static/media/p1.ddc13a2d.jpg",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.4f900c10.js",
     "static/css/2.34dcc6c8.chunk.css",
-    "static/js/2.ca91d9c4.chunk.js",
-    "static/css/main.88766022.chunk.css",
-    "static/js/main.33882f63.chunk.js"
+    "static/js/2.f022fb05.chunk.js",
+    "static/css/main.76df9928.chunk.css",
+    "static/js/main.48de54d3.chunk.js"
   ]
 }
