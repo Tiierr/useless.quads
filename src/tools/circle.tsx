@@ -1,38 +1,8 @@
 import Quad from "./quad";
-import * as d3 from "d3";
 
 export default function Circle(svg: any, quads: null | Quad[], init: boolean) {
     var circle = svg.selectAll('.a').data(quads)
         .enter().append('circle');
-
-    // mobile touch event
-    // todo: support multiple circle split simultaneously
-    circle.on('touchmove', function(d: Quad) {
-        console.log(d.node, typeof d.node);
-        if (d.split() !== null && d.node) {
-            d3.select(d.node).remove();
-            delete d.node;
-            Circle(svg, d.split(), false);
-        }
-    });
-
-    // mouse click event
-    circle.on('click', function(d: Quad) {
-        if (d.split() !== null) {
-            d3.select(d.node).remove();
-            delete d.node;
-            Circle(svg, d.split(), false);
-        }
-    });
-
-    // mouse out event
-    circle.on('mouseout', function(d: Quad) {
-        if (d.split() !== null && d.node) {
-            d3.select(d.node).remove();
-            delete d.node;
-            Circle(svg, d.split(), false);
-        }
-    });
 
     if (init) {
         // Setup the initial state of the initial circle

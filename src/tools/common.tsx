@@ -1,7 +1,7 @@
-import p1 from '../static/img/p1.jpg';
-import p2 from '../static/img/p2.jpg';
-import p3 from '../static/img/p3.png';
-import p4 from '../static/img/p4.jpeg';
+import p1 from '../assets/img/p1.jpg';
+import p2 from '../assets/img/p2.jpg';
+import p3 from '../assets/img/p3.png';
+import p4 from '../assets/img/p4.jpeg';
 
 
 const findImage = (): Array<string> => {

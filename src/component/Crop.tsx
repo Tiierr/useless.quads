@@ -1,8 +1,8 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react';
 import Cropper from 'react-cropper';
 import 'cropperjs/dist/cropper.css';
-import './crop.scss';
-import submitIcon from "../static/svg/done.svg";
+import '../style/crop.scss';
+import submitIcon from "../assets/svg/done.svg";
 
 interface uploadProps {
     uploadedImageFile: Blob,

@@ -1,4 +1,6 @@
-import {checkSplit, computeHistogram, colorFromHistogram} from './calculate';
+import {checkSplit, colorFromHistogram, computeHistogram} from './calculate';
+import * as d3 from "d3";
+import Circle from "./circle";
 
 const sum = function (items: Array<Quad | null>, prop: string){
     return items.reduce( function(a, b){
@@ -16,6 +18,8 @@ class Quad {
     color: string;
     parent: null | Quad;
     node: null | HTMLElement;
+    point: Array<number>;
+    children: Array<Quad>;
     private ctx: CanvasRenderingContext2D;
     private score: number;
 
@@ -32,13 +36,20 @@ class Quad {
         this.y = y;
         this.w = w;
         this.h = h;
+        this.point = [x + h/2, y + w/2];
         this.ctx = imageContext;
         this.color = `#${(0x1000000 + (r << 16) + (g << 8) + b).toString(16).substring(1)}`;
         this.score = error * Math.pow(w * h, 0.25);
         this.e = error;
         this.node = null;
         this.parent = p;
+        this.children = [];
     }
+
+    isSplitable(): boolean {
+        return this.node !== null && this.split() !== null
+    }
+
     averageError(): number{
         const quads = this.split();
         if (quads == null) {
@@ -70,7 +81,34 @@ class Quad {
             new Quad(x2, y2, dx, dy, this, this.ctx)
         ];
     }
+    splitToCircle(svgNode: any){
+        if (!this.split()) return;
+        d3.select(this.node).remove();
+        delete this.node;
+        Circle(svgNode, this.children, false);
+    }
 }
 
 
+function getAllLeaf (quads: Array<Quad>) {
+    let result: Array<Quad> = [];
+    function getLeaf (quads: Array<Quad>) {
+        quads.forEach((item: Quad) => {
+            let childrenLeaf = item.split();
+            // @ts-ignore
+            item.children = childrenLeaf;
+            if (childrenLeaf != null) {
+                getLeaf(childrenLeaf)
+            } else {
+                result[item.x/4 * 128 + item.y/4] = item;
+            }
+        })
+    }
+    getLeaf(quads);
+    return result;
+}
+
 export default Quad;
+export {
+    getAllLeaf
+}

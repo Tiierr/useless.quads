@@ -1,5 +1,5 @@
 import React from 'react';
-import './error.scss';
+import '../style/error.scss';
 
 interface errorProps {
     title: string;

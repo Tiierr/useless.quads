@@ -1,12 +1,23 @@
-import React, {useEffect} from 'react';
-import './bulb.scss';
+import React, {useEffect, useState} from 'react';
+import '../style/bulb.scss';
 import {useLocalStorage} from "@rehooks/local-storage";
 
-interface BulbProps {
-    onSwitch: () => void
-}
+export default function Bulb() {
+    const lightColor = "#fffffb", darkColor = "#222";
 
-export default function Bulb({onSwitch}: BulbProps) {
+    const [backgroundColor, setBGColor] = useLocalStorage<string>("backgroundColor", lightColor);
+    const [bulb, setBulb] = useLocalStorage<boolean>("bulb", false);
+
+    useEffect(() => {
+        document.body.style.backgroundColor = backgroundColor;
+    }, [backgroundColor])
+
+
+    useEffect(() => {
+        setBGColor(bulb ? darkColor : lightColor)
+    }, [bulb, setBGColor])
+
+
     const light = () => {
         return {
             bulbLight: {
@@ -26,15 +37,15 @@ export default function Bulb({onSwitch}: BulbProps) {
             },
         }
     }
-    const [cableStyle, setCableStyle] = useLocalStorage("cableStyle", {});
-    const [coverStyle, setCoverStyle] = useLocalStorage("coverStyle", {});
-    const [bulbStyle, setBulbStyle] = useLocalStorage("bulbStyle", {});
-    const [bulbLightStyle, setLightStyle] = useLocalStorage("bulbLightStyle", {});
-    const [bulbSwitch, setSwitch] = useLocalStorage<boolean>("bulbSwitch", false);
+
+    const [cableStyle, setCableStyle] = useState({});
+    const [coverStyle, setCoverStyle] = useState({});
+    const [bulbStyle, setBulbStyle] = useState({});
+    const [bulbLightStyle, setLightStyle] = useState({});
 
     useEffect(() => {
         const lightStyle = light();
-        if (!bulbSwitch){
+        if (!bulb){
             setLightStyle({})
             setBulbStyle({})
             setCoverStyle({})
@@ -45,14 +56,14 @@ export default function Bulb({onSwitch}: BulbProps) {
             setCoverStyle(lightStyle.bulbCover)
             setCableStyle(lightStyle.cable)
         }
-    }, [bulbSwitch,  setCableStyle, setLightStyle, setCoverStyle, setBulbStyle])
+    }, [bulb,  setCableStyle, setLightStyle, setCoverStyle, setBulbStyle])
 
     return (
         <div className="bulb-container">
             <div className="light">
                 <div className="cable" style={cableStyle}/>
                 <div className="bulb-cover" style={coverStyle}/>
-                <div className="bulb" style={bulbStyle} onClick={() => {setSwitch(!bulbSwitch); onSwitch()}}>
+                <div className="bulb" style={bulbStyle} onClick={() => setBulb(!bulb)}>
                     <div className="bulb-light" style={bulbLightStyle}/>
                 </div>
             </div>

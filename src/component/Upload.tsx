@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import Crop from "./crop";
-import './upload.scss';
-import uploadIcon from '../static/svg/upload.svg';
+import Crop from "./Crop";
+import '../style/upload.scss';
+import uploadIcon from '../assets/svg/upload.svg';
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024 // 文件最大限制为10M
 
