@@ -1,215 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3065a15a-4dd7-4994-a805-7ce55516df2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/Save.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/save.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/event.tsx" afterDir="false" />
+    <list default="true" id="73b6cc6d-df9d-496d-aba4-ee68b56a5ada" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/useless.quads.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bulb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/bulb.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/bulb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Bulb.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/crop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/crop.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/crop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Crop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/error.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/upload.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/upload.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/upload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Upload.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/img/p1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/p1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/img/p2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/p2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/img/p3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/p3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/img/p4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/p4.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/svg/done.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/done.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/svg/download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/download.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/svg/upload.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/upload.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/calculate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/calculate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/circle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/circle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/common.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/common.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/quad.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/quad.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Crop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Crop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Save.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Save.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-        <option value="$PROJECT_DIR$/.idea/useless.quads.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1dTWWjPKDuHAq7TV9tzVQe0hOMA" />
+  <component name="ProjectId" id="1e4eMG2oZmphLPsZZnOWpRorUqE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/static/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-  </component>
-  <component name="ReadonlyStatusHandler">
-    <option name="SHOW_DIALOG" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/static/img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/style" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/static/svg" />
-      <recent name="$PROJECT_DIR$/src/static/file" />
-      <recent name="$PROJECT_DIR$/src/static" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="quad_demo.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="quad_demo.js" working-dir="$PROJECT_DIR$/src">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.quad_demo.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3065a15a-4dd7-4994-a805-7ce55516df2b" name="Default Changelist" comment="" />
-      <created>1592116992177</created>
+      <changelist id="73b6cc6d-df9d-496d-aba4-ee68b56a5ada" name="Default Changelist" comment="" />
+      <created>1593585242984</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592116992177</updated>
-      <workItem from="1592116994702" duration="15891000" />
-      <workItem from="1592194457369" duration="6546000" />
-      <workItem from="1592205584046" duration="284000" />
-      <workItem from="1592214934738" duration="12124000" />
-      <workItem from="1592449599456" duration="890000" />
-      <workItem from="1592716573802" duration="23211000" />
-      <workItem from="1592824191713" duration="2484000" />
-      <workItem from="1593155191438" duration="7816000" />
-      <workItem from="1593177563534" duration="229000" />
-      <workItem from="1593320479650" duration="226000" />
-      <workItem from="1593321926014" duration="842000" />
-      <workItem from="1593341371420" duration="13455000" />
-      <workItem from="1593424817617" duration="11553000" />
+      <updated>1593585242984</updated>
+      <workItem from="1593585247033" duration="2422000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2115" y="403" key="#SCSS_Lint" timestamp="1592735479341">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2115" y="403" key="#SCSS_Lint/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592735479341" />
-    <state x="1864" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593161930036">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1864" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593161930036" />
-    <state x="2158" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593156028155">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2158" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593156028155" />
-    <state x="2104" y="218" key="#quad_demo.js" timestamp="1593397022905">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2104" y="218" key="#quad_demo.js/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593397022905" />
-    <state x="2104" y="218" key="#quad_demo.mjs" timestamp="1593397386691">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2104" y="218" key="#quad_demo.mjs/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593397386691" />
-    <state x="1539" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1593160204782">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1539" y="100" width="1720" height="880" key="DiffContextDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593160204782" />
-    <state x="2065" y="325" key="EditFileWatcherDialog" timestamp="1592735475326">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2065" y="325" key="EditFileWatcherDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592735475325" />
-    <state width="1899" height="305" key="GridCell.Tab.0.bottom" timestamp="1593411491004">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1899" height="305" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593411491004" />
-    <state width="1899" height="305" key="GridCell.Tab.0.center" timestamp="1593411491001">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1899" height="305" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593411491001" />
-    <state width="1899" height="305" key="GridCell.Tab.0.left" timestamp="1593411490853">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1899" height="305" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593411490853" />
-    <state width="1899" height="305" key="GridCell.Tab.0.right" timestamp="1593411491003">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1899" height="305" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593411491003" />
-    <state x="1909" y="179" key="SettingsEditor" timestamp="1592450887027">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1909" y="179" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592450887027" />
-    <state x="122" y="166" width="1290" height="734" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593441479007">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="1602" y="200" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593170268786" />
-    <state x="122" y="166" width="1290" height="734" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1593441479007" />
-    <state x="500" y="246" width="568" height="490" key="find.popup" timestamp="1593446445417">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="2107" y="295" width="586" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593174650923" />
-    <state x="500" y="246" width="568" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593446445417" />
-    <state x="2184" y="321" key="refactoring.ChangeSignatureDialog" timestamp="1593398500196">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2184" y="321" key="refactoring.ChangeSignatureDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593398500196" />
-    <state x="2065" y="241" key="search.everywhere.popup" timestamp="1593428145553">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2065" y="241" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593428145553" />
-    <state x="2130" y="389" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1592395810274">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2130" y="389" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1592395810274" />
   </component>
 </project>

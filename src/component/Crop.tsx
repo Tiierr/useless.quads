@@ -11,38 +11,33 @@ interface uploadProps {
 }
 
 export default function Crop({ uploadedImageFile, onClose, onSubmit }: uploadProps) {
-    const [src, setSrc] = useState(null)
-    const cropperRef = useRef(null)
+    const [src, setSrc] = useState('');
+    const cropperRef = useRef(null);
 
     useEffect(() => {
-        const fileReader = new FileReader()
+        const fileReader = new FileReader();
         fileReader.onload = (e) => {
-            // @ts-ignore
-            const dataURL = e.target.result
-            // @ts-ignore
-            setSrc(dataURL)
+            const dataURL = e?.target?.result as string;
+            setSrc(dataURL);
         }
-
-        fileReader.readAsDataURL(uploadedImageFile)
-    }, [uploadedImageFile])
+        fileReader.readAsDataURL(uploadedImageFile);
+    }, [uploadedImageFile]);
 
     const handleSubmit = useCallback(() => {
         // @ts-ignore
         cropperRef.current.getCroppedCanvas().toBlob(async blob => {
-            onSubmit(blob)
-            onClose()
+            onSubmit(blob);
+            onClose();
         })
-    }, [onClose, onSubmit])
+    }, [onClose, onSubmit]);
 
     return (
         <>
             <div className="react-cropper-modal">
                 <div className="modal-panel">
                     <div className="cropper-container-container">
-
                         <div className="cropper-container">
                             <Cropper
-                                // @ts-ignore
                                 src={src}
                                 className="cropper"
                                 ref={cropperRef}

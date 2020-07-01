@@ -16,7 +16,6 @@ export default function Save({size}: SaveProps) {
             .attr("version", 1.1)
             .attr("xmlns", "http://www.w3.org/2000/svg")
 
-        if (!svg) return;
         // @ts-ignore
         let html = svg.node().parentNode.innerHTML;
 
@@ -24,13 +23,11 @@ export default function Save({size}: SaveProps) {
         let context: CanvasRenderingContext2D = saveCanvasRef.current.getContext('2d');
         let saveImage = new Image();
         saveImage.onload = function(){
-            // @ts-ignore
+            const backgroundColor = localStorage.getItem('backgroundColor') ?? "#fffffb"
             context.clearRect( 0, 0, saveSize, saveSize)
-            // context.fillStyle = backgroundColor;
+            context.fillStyle = backgroundColor;
             context.fillRect(0,0, saveSize, saveSize);
-
             context.drawImage(saveImage, 0, 0, saveSize, saveSize);
-            // @ts-ignore
             let canvasData = canvas.toDataURL("image/png");
             var a = document.createElement("a");
             a.download = "quads.png";

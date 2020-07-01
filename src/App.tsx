@@ -20,10 +20,7 @@ function App() {
   const maxSize = 512;
   const [quadImage, setQuadImage] = useState<string>(getRandom(images));
     useEffect(() => {
-    if (!canvasRef.current) return;
-
-    // @ts-ignore
-    let context: CanvasRenderingContext2D = canvasRef.current.getContext('2d');
+    let context = canvasRef.current?.getContext('2d') as CanvasRenderingContext2D;
     let img = new Image();
     img.onload = function(){
       context.drawImage(img, 0, 0, maxSize, maxSize);
