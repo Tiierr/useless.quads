@@ -1,3 +1,5 @@
+import Quad from "./quad";
+
 function colorFromHistogram(histogram: Uint32Array) {
     const [r, re] = weightedAverage(histogram.subarray(0, 256));
     const [g, ge] = weightedAverage(histogram.subarray(256, 512));
@@ -47,8 +49,51 @@ function checkSplit(args: Array<number>): boolean {
     return args.filter(x => x >= 4).length === args.length;
 }
 
+function reverseSquareArrayByStep(array: Array<Quad>, step: number){
+    let b : Quad[] = [];
+    for (let j = 0; j <= array.length; j += step * 2){
+        b = b.concat(array.slice(j, j + step), array.slice(j + step, j + step * 2).reverse())
+    }
+    return b;
+}
+
+function sortQuadArray(quads: Quad[][]){
+    for (let i = 0; i < quads.length; i++){
+        let a = quads[i];
+        a.sort((a, b) => a.y - b.y);
+        quads[i] = reverseSquareArrayByStep(a, Math.sqrt(a.length));
+    }
+    return quads.flat();
+}
+
+function computeSplitQuad (quad: Quad) {
+    let array2d: Quad[][] = [];
+    for (let i = 1; i < 128; i *= 2) {
+        array2d[Math.log2(i)] = [];
+    }
+    array2d[0] = [quad];
+    let quads = quad.split() as Array<Quad>;
+    quad.children = quads;
+    function SplitQuad (quads: Array<Quad>) {
+        quads.forEach((item: Quad) => {
+            let childrenLeaf = item.split();
+            // @ts-ignore
+            item.children = childrenLeaf;
+            if (childrenLeaf != null) {
+                array2d[Math.log2(128) - Math.log2(item.w / 4)].push(item)
+                SplitQuad(childrenLeaf)
+            } else {
+                return
+            }
+        })
+    }
+    SplitQuad(quads);
+    return sortQuadArray(array2d);
+}
+
 export {
     colorFromHistogram,
     computeHistogram,
-    checkSplit
+    checkSplit,
+    computeSplitQuad
 }

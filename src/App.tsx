@@ -7,8 +7,9 @@ import {findImage, getRandom} from "./tools/common";
 import Upload from "./component/Upload";
 import Error from "./component/Error";
 import Bulb from "./component/Bulb";
-import onEvent from "./tools/event";
 import Save from "./component/Save";
+import {computeSplitQuad} from "./tools/calculate";
+import useInterval from "./tools/hooks";
 
 function App() {
   const [errorVisible, setError] = useState(false);
@@ -16,11 +17,15 @@ function App() {
 
   const dotRef = useRef(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const startInterval = useInterval();
+
 
   const maxSize = 512;
   const [quadImage, setQuadImage] = useState<string>(getRandom(images));
-    useEffect(() => {
+
+  useEffect(() => {
     let context = canvasRef.current?.getContext('2d') as CanvasRenderingContext2D;
+
     let img = new Image();
     img.onload = function(){
       context.drawImage(img, 0, 0, maxSize, maxSize);
@@ -30,11 +35,15 @@ function App() {
           .style("display", "block");
 
       const quad = new Quad(0, 0, maxSize, maxSize, null, context);
-      Circle(svg, [quad], true);
+      Circle(svg, [quad], true)
+      // todo : switch manual and auto mode
+      // canvas pause
       // start listening event
-      onEvent(quad, svg);
+      // onEvent(quad, svg);
+      startInterval(svg, computeSplitQuad(quad));
     };
     img.src = quadImage;
+    // eslint-disable-next-line
   }, [quadImage]);
 
   return (

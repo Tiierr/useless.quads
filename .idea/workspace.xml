@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73b6cc6d-df9d-496d-aba4-ee68b56a5ada" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/hooks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Crop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Crop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Save.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Save.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/calculate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/calculate.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,5 +47,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2106" y="215" key="#TypeScript" timestamp="1593774881615">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2106" y="215" key="#TypeScript/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593774881615" />
+    <state x="2107" y="295" width="586" height="490" key="find.popup" timestamp="1593777347115">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2107" y="295" width="586" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1593777347115" />
+    <state x="385" y="196" key="search.everywhere.popup" timestamp="1593621314900">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593621314900" />
   </component>
 </project>
