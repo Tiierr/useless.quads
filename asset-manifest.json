@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/useless.quads/static/css/main.76df9928.chunk.css",
-    "main.js": "/useless.quads/static/js/main.3b43cdeb.chunk.js",
-    "main.js.map": "/useless.quads/static/js/main.3b43cdeb.chunk.js.map",
+    "main.js": "/useless.quads/static/js/main.062075b7.chunk.js",
+    "main.js.map": "/useless.quads/static/js/main.062075b7.chunk.js.map",
     "runtime-main.js": "/useless.quads/static/js/runtime-main.4f900c10.js",
     "runtime-main.js.map": "/useless.quads/static/js/runtime-main.4f900c10.js.map",
     "static/css/2.34dcc6c8.chunk.css": "/useless.quads/static/css/2.34dcc6c8.chunk.css",
     "static/js/2.48d87ddc.chunk.js": "/useless.quads/static/js/2.48d87ddc.chunk.js",
     "static/js/2.48d87ddc.chunk.js.map": "/useless.quads/static/js/2.48d87ddc.chunk.js.map",
     "index.html": "/useless.quads/index.html",
-    "precache-manifest.7cd32ae4beb95a32b612cb5693b37c8c.js": "/useless.quads/precache-manifest.7cd32ae4beb95a32b612cb5693b37c8c.js",
+    "precache-manifest.27afbde31307e35c4994c53631db5e83.js": "/useless.quads/precache-manifest.27afbde31307e35c4994c53631db5e83.js",
     "service-worker.js": "/useless.quads/service-worker.js",
     "static/css/2.34dcc6c8.chunk.css.map": "/useless.quads/static/css/2.34dcc6c8.chunk.css.map",
     "static/css/main.76df9928.chunk.css.map": "/useless.quads/static/css/main.76df9928.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.34dcc6c8.chunk.css",
     "static/js/2.48d87ddc.chunk.js",
     "static/css/main.76df9928.chunk.css",
-    "static/js/main.3b43cdeb.chunk.js"
+    "static/js/main.062075b7.chunk.js"
   ]
 }
