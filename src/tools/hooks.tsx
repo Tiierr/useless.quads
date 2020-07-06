@@ -8,15 +8,12 @@ function useInterval() {
 
     // Set up the interval.
     useEffect(() => {
-        if (leafs?.length === 0) {
-            return
-        }
+        if (leafs?.length === 0) return;
         function tick() {
+            if (leafs?.length === 0) return;
             if (leafs[0].w !== delay){
                 setDelay(leafs[0].w);
             }
-            if (!leafs) return;
-
             let q = leafs.shift();
             if (q === undefined) {
                 return;
